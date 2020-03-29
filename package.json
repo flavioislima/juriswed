@@ -7,11 +7,23 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "try-release": "react-native run-android --variant=release",
+    "release": "cd ./android && ./gradlew assembleRelease",
+    "clean": "cd ./android && ./gradlew clean build",
+    "bundle": "cd ./android && ./gradlew bundleRelease"
   },
   "dependencies": {
     "react": "16.11.0",
-    "react-native": "0.62.0"
+    "react-native": "0.62.0",
+    "@react-navigation/bottom-tabs": "^5.1.1",
+    "@react-navigation/drawer": "^5.1.1",
+    "@react-navigation/native": "^5.0.9",
+    "@react-navigation/stack": "^5.1.1",    
+    "react-native-safe-area-context": "^0.7.3",
+    "react-native-screens": "^2.2.0",
+    "react-native-gesture-handler": "^1.6.0",
+    "react-native-push-notification": "^3.1.9"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
