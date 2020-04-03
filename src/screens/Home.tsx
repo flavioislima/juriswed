@@ -4,7 +4,7 @@ import {StyleSheet, View, Text} from 'react-native';
 export const Home = () => {
   return (
     <View style={styles.absoluteCenter}>
-      <Text style={styles.text}> This is Home </Text>
+      <Text style={styles.text}> This is home. Juriswed! ™ </Text>
     </View>
   );
 };
