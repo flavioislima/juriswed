@@ -1,8 +1,8 @@
-import React from 'react';
-import {NavigationContainer} from '@react-navigation/native';
-import {createStackNavigator} from '@react-navigation/stack';
+import * as React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 
-import {BottomNavigation} from './BottomNavigation';
+import { BottomNavigation } from './BottomNavigation';
 
 const Stack = createStackNavigator();
 
@@ -13,7 +13,7 @@ export const AppNavigation = () => {
         <Stack.Screen
           name="Tabs"
           component={BottomNavigation}
-          options={{header: () => null}}
+          options={{ header: () => null }}
         />
       </Stack.Navigator>
     </NavigationContainer>

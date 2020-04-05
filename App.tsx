@@ -1,5 +1,5 @@
-import React from 'react';
-import {AppNavigation} from './src/navigation';
+import * as React from 'react';
+import { AppNavigation } from './src/navigation';
 
 const App = () => {
   return (

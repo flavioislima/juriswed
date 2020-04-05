@@ -1,8 +1,8 @@
-import React from 'react';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import * as React from 'react';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
-import {Home, Notifications, Comments} from '../../screens';
+import { Home, Notifications, Comments } from '../../screens';
 
 const Tab = createBottomTabNavigator();
 
@@ -29,7 +29,7 @@ export const BottomNavigation = (): JSX.Element => {
         name="Sidebar"
         component={Comments}
         options={{
-          tabBarIcon: ({focused}) => (
+          tabBarIcon: ({ focused }) => (
             <Icon size={30} name="menu" color={colorHandler(focused)} />
           ),
         }}
@@ -38,7 +38,7 @@ export const BottomNavigation = (): JSX.Element => {
         name="Comments"
         component={Comments}
         options={{
-          tabBarIcon: ({focused}) => (
+          tabBarIcon: ({ focused }) => (
             <Icon size={30} name="message" color={colorHandler(focused)} />
           ),
         }}
@@ -47,7 +47,7 @@ export const BottomNavigation = (): JSX.Element => {
         name="notifications"
         component={Notifications}
         options={{
-          tabBarIcon: ({focused}) => (
+          tabBarIcon: ({ focused }) => (
             <Icon
               size={30}
               name="notifications-active"
@@ -60,7 +60,7 @@ export const BottomNavigation = (): JSX.Element => {
         name="Home"
         component={Home}
         options={{
-          tabBarIcon: ({focused}) => (
+          tabBarIcon: ({ focused }) => (
             <Icon size={30} name="home" color={colorHandler(focused)} />
           ),
         }}
